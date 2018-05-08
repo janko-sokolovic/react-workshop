@@ -1,0 +1,33 @@
+[{
+    "name": "Allianz Arena",
+    "city": "Munich"
+  },
+  {
+    "name": "Hoffbrauhaus",
+    "city": "Munich"
+  },
+  {
+    "name": "Kalemegdan",
+    "city": "Belgrade"
+  },
+  {
+    "name": "St. Sava Temple",
+    "city": "Belgrade"
+  },
+  {
+    "name": "Uetliberg",
+    "city": "Zurich"
+  },
+  {
+    "name": "Grossmunster",
+    "city": "Zurich"
+  },
+  {
+    "name": "Big Ben",
+    "city": "London"
+  },
+  {
+    "name": "Trafalgar Square",
+    "city": "London"
+  }
+]
