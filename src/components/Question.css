@@ -1,0 +1,36 @@
+.question {
+    font-size: 30px;
+    text-align: center;
+}
+
+.landmark {
+    color: #0F52BA;
+    font-weight: bold;
+}
+
+.answers {
+    width: 500px;
+    margin: 100px auto;
+}
+
+.answer {
+    display: inline-block;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px 25px;
+    font-size: 20px;
+    background: #EEEEEE;
+    cursor: pointer;
+    outline: none;
+}
+
+.answer:hover {
+    background: rgb(52, 110, 199);
+    color: #FFFFFF;
+}
+
+.answer:active {
+    background: #0F52BA;
+}
