@@ -26,8 +26,7 @@ export class Question extends Component {
     return (
       <div>
         <div className="question">
-          Where is the <span className="landmark"> {landmark.name} </span>{" "}
-          located?
+          Where is the <span className="landmark"> {landmark.name} </span>located?
         </div>
         <div className="answers">{this.renderAnswers(allAnswers)}</div>
       </div>
