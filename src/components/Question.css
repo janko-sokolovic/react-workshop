@@ -24,6 +24,7 @@
     background: #EEEEEE;
     cursor: pointer;
     outline: none;
+    font-weight: bold;
 }
 
 .answer:hover {

@@ -16,17 +16,17 @@ export class Question extends Component {
   }
 
   render() {
-    const randomLandmark = _.sample(landmarks);
-    const randomIncorrectAnswers = _.sampleSize(cities, 3);
+    const landmark = _.sample(landmarks);
+    const correctCity = landmark.city;
 
-    const allAnswers = _.shuffle(
-      randomIncorrectAnswers.concat(randomLandmark.city)
-    );
+    const incorrectCities = _.sampleSize(_.without(cities, correctCity), 3);
+
+    const allAnswers = _.shuffle(incorrectCities.concat(correctCity));
 
     return (
       <div>
         <div className="question">
-          Where is the <span className="landmark"> {randomLandmark.name} </span>{" "}
+          Where is the <span className="landmark"> {landmark.name} </span>{" "}
           located?
         </div>
         <div className="answers">{this.renderAnswers(allAnswers)}</div>
