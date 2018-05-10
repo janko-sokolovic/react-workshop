@@ -2,10 +2,13 @@ import React, { Component } from "react";
 
 export class Result extends Component {
   render() {
-    if (this.props.selectedAnswer === this.props.landmark.city) {
-      return <div>You are absolutely correct!</div>;
-    } else {
-      return <div> You are terribly wrong!</div>;
-    }
+    const { selectedAnswer, city } = this.props;
+    return (
+      <div>
+        {selectedAnswer === city
+          ? "You are absolutely correct!"
+          : "You are terribly wrong!"}
+      </div>
+    );
   }
 }

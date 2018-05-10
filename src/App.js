@@ -36,7 +36,7 @@ class App extends Component {
             path="/result"
             render={() => (
               <Result
-                landmark={this.state.landmark}
+                city={this.state.landmark.city}
                 selectedAnswer={this.state.selectedAnswer}
               />
             )}
