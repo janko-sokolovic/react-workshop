@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Question } from "./components/Question";
 import { Result } from "./components/Result";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, Redirect, Switch, withRouter } from "react-router-dom";
 import landmarks from "./data/landmarks";
 import cities from "./data/cities";
 import _ from "lodash";
@@ -51,6 +51,7 @@ class App extends Component {
               />
             )}
           />
+          <Redirect to="/" />
         </Switch>
       </div>
     );
